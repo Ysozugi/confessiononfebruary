@@ -13,6 +13,10 @@ header {
     color: #fff; /* White text color */
 }
 
+header img {
+    max-width: 100px; /* Adjust the max-width of the logo as needed */
+}
+
 .main-content {
     margin: 2em;
 }
@@ -26,3 +30,4 @@ footer {
     width: 100%;
     color: #fff; /* White text color */
 }
+
