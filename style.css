@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    color: #d81b60; /* Dark pink text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff4081; /* Pink header background */
+    text-align: center;
+    padding: 1em;
+    color: #fff; /* White text color */
+}
+
+.main-content {
+    margin: 2em;
+}
+
+footer {
+    background-color: #ff4081; /* Pink footer background */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff; /* White text color */
+}
