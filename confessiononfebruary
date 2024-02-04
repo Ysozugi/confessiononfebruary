@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #confessionDisplay {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #confessionInput {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Confession Site</h1>
+    <textarea id="confessionInput" placeholder="Write your confession..."></textarea>
+    <br>
+    <button onclick="submitConfession()">Submit Confession</button>
+    <div id="confessionDisplay"></div>
+
+    <script>
+        function submitConfession() {
+            const confessionInput = document.getElementById("confessionInput").value;
+            const confessionDisplay = document.getElementById("confessionDisplay");
+            
+            if (confessionInput.trim() !== "") {
+                const newConfession = document.createElement("p");
+                newConfession.innerText = confessionInput;
+                confessionDisplay.appendChild(newConfession);
+                
+                // You can add logic here to save confessions to a server/database.
+            } else {
+                alert("Please enter a confession before submitting.");
+            }
+        }
+    </script>
+</body>
+</html>
